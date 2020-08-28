@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{anyfontsize}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\textItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Divyansh Madhwal}} & Email : \href{mailto:divyansh.madhwal@gmail.com}{divyansh.madhwal@gmail.com}\\
+  \href{http://www.linkedin.com/in/divyansh-madhwal}{www.linkedin.com/in/divyansh-madhwal} & Mobile : +91-962-565-5186 \\
+  \href{http://www.github.com/Divnsh}
+  {www.github.com/Divnsh}\\  
+  
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Easyrewardz Software Services Pvt. Ltd.}{Gurgaon, HR}
+      {Data Scientist}{May 2018 -- Feb 2020}
+      \resumeItemListStart
+        \resumeItem{Insights Creation Engine}
+          {Created backend for generating customizable customer level insights used by store managers for better customer service. Insights include CLTV (Customer Lifetime Value), product recommendations, churn prediction, sentiment analysis, and several other non machine learning based insights.}
+        \resumeItem{Tags Creation Engine}
+          {Modified old and created new modules. The engine segments customers based on customizable inputs selected by the user. Done on both PySpark and older R variants of the engine.}
+		\resumeItem{Single View Creator}
+		  {Developed a unified view creator in PySpark that performs common feature engineering and filtering tasks needed in frequent data science modelling applications, boosting productivity of the team.}
+		\resumeItem{Segmentation}
+		  {Designed and developed an analytics application using Flask API and python backend. Segments and ranks customers, stores and products based on the features and their priorities selected by the user.}
+		\resumeItem{Forecasting KPI's}
+		  {Performed time series forecasting on KPI's such as weekly sales, number of newcomers, total discounts availed, etc.}
+		\resumeItem{Fraud Engine}
+		  {Designed and developed a fraud detection engine that detects anomalies at a range of specified window sizes (weekly, biweekly, monthly, etc.). Extracted rules from predictions using decision tree algorithm.}
+		  
+		\resumeItem{Lapsation}
+		  {Implemented BGNBD model for predicting number of days till next purchase for each customer. Used in identifying lapsed customers.}
+		  
+		\resumeItem{Propensity Modelling}
+		  {Created a model for generating propensity scores for customers indicating their propensity of arrival in campaign periods. Improved hit rates from 5\% to 25\%.
+		  Co-created a second model for predicting the discount levels to be availed by each customer.}
+		  
+		\resumeItem{Customer Delight Index}
+		  {Prototyped a scoring mechanism for calculating an index representing customer delight through answers in feedback forms.}
+		  
+		\resumeItem{Hit-rate Confidence Intervals}
+		  {Used Gaussian Mixture Models, ANOVA and bootstrapping techniques for calculating confidence intervals for click rates on offers during the 6 time slots in a day, considering offer type and mode of communcation.}    
+		  
+		\resumeItem{Brand Analytics}
+		  {Performed descriptive analytics for a major brand at various levels of aggregation.}	       	          
+      \resumeItemListEnd
+  
+  \resumeSubheading
+      {National Institute Of Public Cooperation And Child Development}{Delhi}
+      {Intern}{May 2013 -- Jul 2013}
+      \resumeItemListStart
+        \resumeItem{Vital Statistics}
+        {Performed analysis, interpolation and extrapolation of data related to vital statistics and education in various states of India.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd     
+  
+  
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Manipal Academy Of Higher Education}{Bangalore}
+      {Post Graduate Diploma in Data Science ;  CGPA: 8.82/10}{Jul. 2017 -- Jun. 2018}
+      \resumeItemListStart
+      	\textItem{Coursework included R Programming, Statistics, Big Data, Machine Learning, Data Visualization, Unstructured Data Analysis, Databases, and Finance.}
+      \resumeItemListEnd	
+    \resumeSubheading
+      {Institute of Actuaries of India}{Mumbai}{}{Oct. 2014 -- Oct. 2015\vspace{-7pt}}
+      \textit{\small CT-3:Probability and Mathematical Statistics; CT-1 Financial Mathematics;}\\
+      \textit{\small CT-7:Business Economics}
+    \resumeSubheading
+      {Institute And Faculty Of Actuaries}{London}{}{Jun. 2016 -- Dec. 2017\vspace{-7pt}}
+      \textit{\small CT-5:Contingencies; CT-2:Finance and Financial Reporting; CT-6:Statistical Methods;}\\
+      \textit{\small CT-8:Financial Economics} 
+	\resumeSubheading
+	  {P.G.D.A.V. College, University Of Delhi}{Delhi}
+	  {Bachelor of Science in Statistics}{Jul. 2011 -- Jan. 2015}
+	\resumeSubheading
+	  {Online Courses}{}{}{}
+	  \textit{\small Introduction to Deep Learning; Bayesian Methods in Machine Learning; Natural Language Processing; Deep Learning in Computer Vision : \textbf{Higher School of Economics, Coursera}, 2020}\\
+	  \textit{\small Deep Learning Specialization: \textbf{deeplearning.ai, Coursera}, 2019}\\
+	  \textit{\small Regression Modeling in Practice; Machine Learning for Data Analysis; Data Management and Visualization; Data Analysis Tools : \textbf{Wesleyan University, Coursera}, 2018}\\
+	  \textit{\small M001 MongoDB Basics : \textbf{MongoDB University}, 2018}	      
+  \resumeSubHeadingListEnd
+  
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{CTR prediction}
+      {Click through rate prediction on a travel agency website data using classification algorithms.}
+    \resumeSubItem{Twitter Hate Classification}
+      {Classification on twitter text data using transformer models.}
+    \resumeSubItem{Recommendation System}
+      {Recommend challenges on a competition hosting wesite using VAE and feature embeddings.}
+    \resumeSubItem{Chatbot}
+      {Conversational chatbot used to query stackoverflow answers.}
+  \resumeSubHeadingListEnd
+
+%
+
+%-----------Accomplishments-----------------
+\section{Accomplishments}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Professional Awards}
+      {Awarded Star Performer in 2019 at Easyrewardz Software Services Pvt Ltd.}
+    \resumeSubItem{Entrance exam ranks}
+      {68th rank in BHU Statistics entrance exam 2014, 281st rank in IIT JAM Statistics Exam 2014\vspace{-12pt}}  
+  \resumeSubHeadingListEnd
+%
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem
+      {Languages}{Python, PySpark, SQL, R}
+      %\hfill
+    \resumeSubItem  
+      {Technologies}{Spark, Hadoop, Tensorflow, Pytorch, Flask API, Docker, Git}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
