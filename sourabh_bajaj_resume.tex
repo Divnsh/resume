@@ -101,27 +101,26 @@
 
     \resumeSubheading
       {Easyrewardz Software Services Pvt. Ltd.}{Gurgaon, HR}
-      {Data Scientist}{May 2018 -- Feb 2020}
+      {Data Scientist}{May. 2018 -- Feb. 2020}
       \resumeItemListStart
         \resumeItem{Insights Creation Engine}
-          {Created backend for generating customizable customer level insights used by store managers for better customer service. Insights include CLTV (Customer Lifetime Value), product recommendations, churn prediction, sentiment analysis, and several non-machine-learning based insights.}
+          {Created an engine for generating customer level customizable messages with key indicators calculated in the backend, used by store managers for better customer service. Indicators include Customer Lifetime Value (BGNBD-GammaGamma model), product recommendations (Alternating Least Squares), churn prediction (Gradient Boosted Trees), sentiment analysis (Passive Aggressive Classifier), and several non-machine-learning based insights. \textit{Languages and technologies}: PySpark, Python, Spark, SQL, Cassandra, Elasticsearch.}
         \resumeItem{Tags Creation Engine}
-          {Modified old and created new modules. The engine segments customers based on customizable inputs selected by the user. Done on both PySpark and older R variants of the engine.}
+          {Modified old and created new modules. The engine selects customers based on customizable inputs selected by the user. \textit{Languages and technologies}: PySpark, R.}
 		\resumeItem{Single View Creator}
-		  {Developed a unified view creator in PySpark that performs common feature engineering and filtering tasks needed in frequent data science modelling applications, boosting productivity of the team.}
+		  {Designed and developed an analytics application using Flask API and python. Segments and ranks customers, stores and products based on the features and their priorities selected by the user (K-means and agglomerative hierarchical clustering).}
 		\resumeItem{Segmentation}
-		  {Designed and developed an analytics application using Flask API and python backend. Segments and ranks customers, stores and products based on the features and their priorities selected by the user.}
+		  {Designed and developed an analytics application using Flask API and python. Segments and ranks customers, stores and products based on the features and their priorities selected by the user.}
 		\resumeItem{Forecasting KPI's}
-		  {Performed time series forecasting on KPI's such as weekly sales, number of newcomers, total discounts availed, etc.}
+		  {Performed time series forecasting on KPI’s such as weekly sales, number of newcomers, total discounts availed, etc. (Holt-Winters, Hierarchical Prophet, LSTM).}
 		\resumeItem{Fraud Engine}
-		  {Designed and developed a fraud detection engine that detects anomalies at a range of specified window sizes (weekly, biweekly, monthly, etc.). Extracted rules from predictions using decision tree algorithm.}
+		  { Designed and developed a fraud detection engine that detects anomalies at a range of specified window sizes (weekly, biweekly, monthly, etc.) (Local Outlier Factor, DBScan, Isolation forest, Variational Autoencoder). Extracted rules from predictions using decision tree algorithm. \textit{Languages and technologies}: PySpark, Python, Spark, SQL, Cassandra, PyTorch.}
 		  
 		\resumeItem{Lapsation}
 		  {Implemented BGNBD model for predicting number of days till next purchase for each customer. Used in identifying lapsed customers.}
 		  
 		\resumeItem{Propensity Modelling}
-		  {Created a model for generating propensity scores for customers indicating their propensity of arrival in campaign periods. Improved hit rates from 5\% to 25\%.
-		  Co-created a second model for predicting the discount levels to be availed by each customer.}
+		  {Created a model for generating propensity scores for customers indicating their propensity of arrival in campaign periods(Gradient Boosted Trees). Optimized threshold based on F1-scores. Cumulative accuracy profile used to assess the discriminative power of the model. Improved hit rates from 5\% to 25\%. Co-created a second model for predicting the discount levels to be availed by each customer (Feed forward neural network). \textit{Languages and technologies}: PySpark, Python, Spark, SQL, Tensorflow.}
 		  
 		\resumeItem{Customer Delight Index}
 		  {Prototyped a scoring mechanism for calculating an index representing customer delight through answers in feedback forms.}
@@ -135,10 +134,12 @@
   
   \resumeSubheading
       {National Institute Of Public Cooperation And Child Development}{Delhi}
-      {Intern}{May 2013 -- Jul 2013}
+      {Intern}{May. 2013 -- Jul. 2013}
       \resumeItemListStart
         \resumeItem{Vital Statistics}
         {Performed analysis, interpolation and extrapolation of data related to vital statistics and education in various states of India.}
+        \resumeItem{Management}
+        {Assisted in management of an NGO leaders training workshop, hosted for NGO's from diverse locations in India.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd     
   
@@ -148,7 +149,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Manipal Academy Of Higher Education}{Bangalore}
-      {Post Graduate Diploma in Data Science ;  CGPA: 8.82/10}{Jul. 2017 -- Jun. 2018}
+      {Post Graduate Diploma in Data Science (Full Time);  CGPA: 8.82/10}{Jul. 2017 -- Jun. 2018}
       \resumeItemListStart
       	\textItem{Coursework included R Programming, Statistics, Big Data, Machine Learning, Data Visualization, Unstructured Data Analysis, Databases, and Finance.}
       \resumeItemListEnd	
@@ -162,7 +163,7 @@
       \textit{\small CT-7:Business Economics} 
 	\resumeSubheading
 	  {P.G.D.A.V. College, University Of Delhi}{Delhi}
-	  {Bachelor of Science in Statistics}{Jul. 2011 -- Jan. 2015}
+	  {Bachelor of Science (Hons.) in Statistics}{Jul. 2011 -- Jan. 2015}
 	\resumeSubheading
 	  {Online Courses}{}{}{}
 	  \textit{\small Introduction to Deep Learning; Bayesian Methods in Machine Learning; Natural Language Processing; Deep Learning in Computer Vision : \textbf{Higher School of Economics, Coursera}, 2020}\\
@@ -175,17 +176,19 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{CTR prediction}
-      {Click through rate prediction on a travel agency website data using classification algorithms.}
     \resumeSubItem{Optical Character Recognition}
-      {Recognize text in input image. Supports 5 indian languages and english.}
-    \resumeSubItem{Recommendation System}
-      {Recommend challenges on a competition hosting wesite using VAE and feature embeddings.}
+      {The app takes one or more images as input and returns docx files containing text detected in the images. Supports English, Tamil, Hindi, Telugu, Bengali and Malayalam. OpenCV used to pre-process the images. Pretrained FastSRCNN models used to upscale small images. Legacy and/or LSTM Tesseract models are used based on availability for the language. Web app built using Dash. \textit{\href{https://img2doc.herokuapp.com/}{https://img2doc.herokuapp.com/}}.}
+    \resumeSubItem{CTR prediction}
+      {Data analysis and click-through-rate prediction on a travel agency website data using classification algorithms like Logistic regression, LightGBM, etc.}
+    \resumeSubItem{Recommendation Systems}
+      {1). Recommend challenges on a competition hosting website using multi-VAE (uses multinomial likelihood) with feature embeddings of challenges (extracted from encoder of another VAE). Mean Average Precision used as performance metric. Beta, weighting the KL Divergence loss, tuned to ensure the MAP values do not collapse after a few epochs. \textit{Based on paper: \textit{\href{https://arxiv.org/abs/1802.05814}{https://arxiv.org/abs/1802.05814}}.}\\
+      
+       2). Joke ratings are predicted per user using Hybrid-VAE. Mean word embeddings for jokes are extracted from Bert-base model and reduced from 768 to 3 dimensions using VAE. PCA with 3 components is performed on other joke features and merged with reduced embeddings. Embedding layer in the H-VAE contains the above embeddings, and is used in training the model. H-VAE provides an RMSE of 4.01 compared to SVD's 4.29 on validation set.
+\textit{Based on paper: \href{https://arxiv.org/abs/1808.01006}{https://arxiv.org/abs/1808.01006}}.}
     \resumeSubItem{Chatbot}
-      {Conversational chatbot used to query stackoverflow answers.}
+      {Conversational chatbot used to query stackoverflow threads. Starspace embeddings trained on duplicate detection task, used to encode text. Question is classified as a tag, and the closest thread embedding under the tag is given as response. Pre-trained neural net engine Chatterbot used to carry normal conversations. Intent(dialogue/query) and tag(programming languages) classifiers trained with logistic regression and one-vs-rest logistic respectively. Telegram API used to deploy the bot. \textit{\href{https://github.com/Divnsh/Chatbot_Project}{https://rb.gy/ivkhrg}}.}
     \resumeSubItem{Depression Detection Dashboard}
-      {Detect depression in the text entered by the user, and find relevant depression topics if detected. 
-      roBERTa model trained on scraped posts and comments from reddit. LDA used for topic modelling.}  
+      {Plain text or a single-column csv/excel file is taken as input for the model which predicts the depression score.Top 3 latent depression topics are extracted from the plain text. For training, text is scraped from reddit via PRAW with multithreading. Text pre-processing is performed with multiprocessing. RoBERTa's 97\% accuracy beats XGBoost's 85\% on TF-IDF and LSA features. Gensim's LDA mallet model maximizes coherence score to find relevant topics in depression posts. The containerized web application is built in Dash and deployed with gunicorn and nginx. \textit{\href{https://gitlab.com/divyansh.madhwal/dep-dash-app}{https://gitlab.com/divyansh.madhwal/dep-dash-app}}.}  
   \resumeSubHeadingListEnd
 
 %
@@ -196,19 +199,21 @@
     \resumeSubItem{Professional Awards}
       {Awarded Star Performer in 2019 at Easyrewardz Software Services Pvt Ltd.}
     \resumeSubItem{Entrance exam ranks}
-      {68th rank in BHU Statistics entrance exam 2014, 281st rank in IIT JAM Statistics Exam 2014\vspace{-12pt}}  
+      {68th rank in BHU Statistics entrance exam 2014, 153rd rank in IIT-JAM Statistics Exam 2015.\vspace{-12pt}}  
   \resumeSubHeadingListEnd
 %
 
 
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
+%--------SKILLS------------
+\section{Skills}
   \resumeSubHeadingListStart
     \resumeSubItem
-      {Languages}{Python, PySpark, SQL, R}
+      {Languages}{Python, PySpark, SQL, R.}
       %\hfill
     \resumeSubItem  
-      {Technologies}{Spark, Hadoop, Tensorflow, Pytorch, Flask, Dash, Docker, Tensorflow-serving, Git}
+      {Technologies}{Spark, Hadoop, Tensorflow, Pytorch, Flask, Dash, Docker, Tensorflow-serving, Git, Ubuntu, MS Office, VBA Excel, LaTeX, Shell.}
+    \resumeSubItem
+      {Analytics}{Statistics, ML, NLP, Deep Learning, Computer Vision.}	  
   \resumeSubHeadingListEnd
 
 
